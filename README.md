@@ -1,42 +1,42 @@
-# 🚀 React Professional Form
+# 📰 News App v2
 
-A modern, scalable, and fully responsive form application built using **React**, **TypeScript**, and **Vite**. This project demonstrates best practices for handling forms in React with strong typing, validation, and optimized performance.
+A modern, responsive News Application built with **React**, **TypeScript**, and **Vite** that fetches and displays real-time headlines using **NewsAPI.org**. 
 
 ---
 
-## 📌 Features
+## ✨ Features
 
-* ⚡ Built with **Vite** for fast development and build
-* 🔷 Fully typed with **TypeScript**
-* 🧩 Modular and reusable form components
-* ✅ Form validation support
-* 🎯 Clean and professional UI
-* 📱 Responsive design
-* 🔄 State management using React Hooks
-* 🚀 Optimized performance
+* 🌍 **Real-time News**: Fetches the latest headlines dynamically.
+* 🗂️ **Category Filtering**: Filter news by categories like Technology, Sports, Politics, and more.
+* ⚡ **Optimized Data Fetching**: Utilizes **TanStack React Query** for efficient caching, background updates, and state management.
+* 🎨 **Modern UI**: Designed with **Tailwind CSS v4** for a clean, responsive, and beautiful interface.
+* 🔗 **External Links**: Seamlessly read full articles by opening them in new tabs.
+* 📱 **Fully Responsive**: Optimized for desktops, tablets, and mobile devices.
 
 ---
 
 ## 🛠️ Tech Stack
 
-* React
-* TypeScript
-* Vite
-* CSS / Tailwind CSS (optional)
+* **Frontend**: React 19, TypeScript, Vite
+* **Styling**: Tailwind CSS v4, Lucide React (Icons)
+* **Data Fetching & State**: Axios, TanStack React Query
+* **Linting & Formatting**: ESLint
 
 ---
 
 ## 📂 Project Structure
 
 ```
-react-professional-form/
+news-app/
 │
-├── public/
+├── public/               # Static assets
 ├── src/
-│   ├── components/
-    │   ├── ContactForm.tsx
-│   ├── App.tsx
-│   └── main.tsx
+│   ├── components/       # Reusable UI components (NewsCards, Filters, etc.)
+│   ├── hooks/            # Custom React hooks (e.g., API fetching hooks)
+│   ├── services/         # API configuration and Axios instances
+│   ├── types/            # TypeScript interfaces and types
+│   ├── App.tsx           # Main application component
+│   └── main.tsx          # Application entry point
 │
 ├── index.html
 ├── package.json
@@ -46,33 +46,41 @@ react-professional-form/
 
 ---
 
-## ⚙️ Installation
+## ⚙️ Installation & Setup
 
-```bash
-git clone https://github.com/your-username/react-professional-form.git
-cd react-professional-form
-npm install
-```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/akashb8/News-App-V2.git
+   cd news-app
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Environment Variables:**
+   Create a `.env` file in the root directory and add your NewsAPI key:
+   ```env
+   VITE_NEWS_API_KEY=your_api_key_here
+   ```
+
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
 
 ---
 
-## ▶️ Run Locally
+## 🚀 Build for Production
 
-```bash
-npm run dev
-```
-
----
-
-## 🏗️ Build
+To create a production-ready build:
 
 ```bash
 npm run build
 ```
 
----
-
-## 👀 Preview Build
+To preview the production build locally:
 
 ```bash
 npm run preview
@@ -82,17 +90,17 @@ npm run preview
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to fork this repository and submit a pull request.
+Contributions, issues, and feature requests are welcome! Feel free to fork the repository and submit a pull request.
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
 ## 👨‍💻 Author
 
-Akash Bhattacharyya
-https://github.com/akashb8
+**Akash Bhattacharyya**  
+[GitHub Profile](https://github.com/akashb8)
